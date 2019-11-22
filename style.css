@@ -1,12 +1,31 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Candara;
+    font-family: 'Montserrat';
     color: #1b1b1b;
     line-height: 1.6;
     font-size: 14px;
 }
 
+footer{
+  background: #414141;
+  /* height: 65vh; */
+  height: 100%;
+}
+
+.div-footer{
+  display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+}
+
+.shadow-box {
+  -webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+  }
 
 header{
     position: absolute;
@@ -76,7 +95,6 @@ header nav ul li a:hover{
 
 .wrapper {
     height: calc(100vh);
-    padding-bottom: 10%;
 }
 
 .parallax-img {
@@ -89,13 +107,13 @@ header nav ul li a:hover{
   }
 
   .parallax-img {
-    background-image: url('./city.jpg') ;
+    background-image: url('city.jpg') ;
     
   }
 
   .e-jan_section{
     background: rgba(0,0,0,0.5);
-    background: url('./01.jpg')center center/cover no-repeat fixed;
+    background: url('01.jpg')center center/cover no-repeat fixed;
     opacity: 0.4;
     height: 180px;
   }
@@ -133,6 +151,7 @@ header nav ul li a:hover{
     font-family: 'ostrich_sanslight';
     letter-spacing: 2px;
     margin-bottom: 30px;
+    padding: 24px;
   }
 
   .contents_inner{
@@ -143,10 +162,11 @@ header nav ul li a:hover{
 
   .news_box{
     width: 48%;
+
     background: #ffffff;
     font-size: 13px;
     color: #828282;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     position: relative;
   }
 
@@ -186,7 +206,7 @@ header nav ul li a:hover{
 
   .parallax_section{
     background: rgba(0,0,0,0.5);
-    background: url('./yokohama.jpg') center center/cover no-repeat fixed;
+    background: url('yokohama.jpg') center center/cover no-repeat fixed;
     height: 180px;
     opacity: 0.4;
   }
@@ -218,9 +238,26 @@ header nav ul li a:hover{
   }
 
   .service_title{
-    color: #d8092f;
-    font-size: 20px;
+    /* color: #d8092f;
+    font-size: 20px; */
+    
   }
+
+  .service_title{
+    color: #d8092f;
+    font-weight: bold;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: none;
+    outline: none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+  }
+
+  
+
 
   .e-jan_title{
     font-size: 18px;
@@ -257,6 +294,13 @@ header nav ul li a:hover{
   }
 
   
+.google-map{
+
+    width: 768px; 
+    height: 432px;
+ 
+}
+
   .news_content{
     margin-top: 30px;
     font-size: 15px;
@@ -319,7 +363,7 @@ header nav ul li a:hover{
 .ult-detail{
   margin-top: 20px;
   font-size: 20px;
-  font-family: Candara;
+  font-family: 'Montserrat';
   color: #1b1b1b;
   line-height: 1.6;
 
@@ -431,7 +475,7 @@ img.grayscale:hover {
   color: #d8092f;
   font-size: 30px;
   font-weight: bolder;
-  font-family: Candara;
+  font-family: "Montserrat";
   padding: 20px 0 0 0 ;
 }
 
@@ -439,7 +483,85 @@ img.grayscale:hover {
   height: 320px;
 }
 
+.member-image-size{
+  width: 50%;
+  /* height: 500px; */
+}
 
+#box {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+
+
+
+.image img {
+  display:block;
+  width: 98%;
+  height: 500px;
+}
+
+.news_company img {
+  transform:scale(1);
+  -ms-transform:scale(1);
+  -moz-transform:scale(1);
+  -webkit-transform:scale(1);
+  -o-transform:scale(1);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#box:hover .image img {    
+  cursor: pointer;
+  /* transform:scale(1.5);
+  -ms-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -webkit-transform:scale(1.5);
+  -o-transform:scale(1.5); */
+}
+
+
+.text{
+  position: absolute;    
+  width: 98%;
+  height: 100%;
+  top: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.text:hover{
+  background: rgba(0, 0, 0, 0.164);    
+}
+
+.text a{
+  position: absolute;
+  top: -100%;   
+  left: 0; 
+  font-size:24px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.text:hover a{    
+  color: white;
+  top: 50%;
+  font-weight: bolder;
+  left: 3%; 
+  font-size:24px;
+} 
 
 }
 
@@ -466,7 +588,7 @@ img.grayscale:hover {
     font-weight: bold;
 }
     header .img-logo{
-        width: 30%; 
+        width: 50%; 
     }
 
     .menu-toggle{
@@ -481,6 +603,7 @@ img.grayscale:hover {
         top: 60px;
         left: -100%;
         transition: 0.5s;
+        
     }
 
     header nav.active{
@@ -490,6 +613,7 @@ img.grayscale:hover {
     header nav ul{
         display: block;
         text-align: center;
+   
     }
 
     header nav ul li a{
@@ -512,10 +636,15 @@ img.grayscale:hover {
     z-index: 1000;
     font-size: 22px;
     top: 45%;
-    left: 13%;
+    /* left: 11%; */
+    left: 6%;
     font-weight: bolder;
-    font-family: "Candara"
+    font-family: "Montserrat";
     
+  }
+
+  .slogun-text{
+    font-size:5vw;
   }
 
   
@@ -528,9 +657,10 @@ img.grayscale:hover {
   .section_title{
     font-size: 40px;
     color: #a1a19f;
-    font-family: 'ostrich_sanslight';
+    font-family: "Montserrat";
     letter-spacing: 2px;
     margin-bottom: 30px;
+    margin: auto;
   }
 
   .contents_inner{
@@ -572,14 +702,14 @@ img.grayscale:hover {
   .section_title{
     font-size: 25px;
     color: #a1a19f;
-    font-family: 'ostrich_sanslight';
+    font-family: "Montserrat";
     letter-spacing: 2px;
     margin-bottom: 30px;
   }
 
   .parallax_section{
     background: rgba(0,0,0,0.5);
-    background: url('./yokohama.jpg') center center/cover no-repeat fixed;
+    background: url('yokohama.jpg') center center/cover no-repeat fixed;
     height: 180px;
     opacity: 0.6;
   }
@@ -601,7 +731,7 @@ img.grayscale:hover {
   .e-jan_title{
     font-size: 18px;
     color: #828282;
-    font-family: 'ostrich_sanslight';
+    font-family: "Montserrat";
     margin-bottom: 5px;
     line-height: 1.4;
     text-align: justify;
@@ -648,6 +778,14 @@ img.grayscale:hover {
 
   .service_title{
     color: #d8092f;
+    font-weight: bold;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: none;
+    outline: none;
+    font-family: 'Montserrat';
   }
 
   
@@ -662,22 +800,33 @@ img.grayscale:hover {
   .service_content{
     display: block;
     text-align: center;
-    line-height: 20px;
+    padding: 24px 30px 24px 30px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: bold;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: none;
+    outline: none;
+    font-family: 'Montserrat';
+
   }
 
   .section_member_title{
     font-size: 20px;
     color: #a1a19f;
-    font-family: 'ostrich_sanslight';
+    font-family: "Montserrat";
     margin-bottom: 30px;
     line-height: 50px;
   }
 
   
 .ult-content-box{
-    border-style: solid;
+    /* border-style: solid;
     border-width: 8px;
-    border-color: rgb(250, 114, 104);
+    border-color: rgb(250, 114, 104); */
     transition: all 700ms ease 0s;
     margin: 0px;
     background-color: rgba(0, 0, 0, 0);
@@ -691,12 +840,13 @@ img.grayscale:hover {
   font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat';
+  padding: 24px;
 }
 
 .ult-detail{
   font-size: 16px;
     color: #a1a19f;
-    font-family: 'ostrich_sanslight';
+    font-family: "Montserrat";
     color: #1b1b1b;
 }
 
@@ -759,20 +909,20 @@ filter: none;
   color: #d8092f;
   font-size: 30px;
   font-weight: bolder;
-  font-family: Candara;
+  font-family: "Montserrat";
   padding: 0;
 }
 
 
 
-/* .news_company{
+ .news_company{
   height: 350px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   left: 0;
-} */
+} 
 
-/* 
+
 #box {
   text-align: center;
   margin: auto;
@@ -801,11 +951,11 @@ filter: none;
 
 #box:hover .image img {    
   cursor: pointer;
-  transform:scale(1.5);
+  /* transform:scale(1.5);
   -ms-transform:scale(1.5);
   -moz-transform:scale(1.5);
   -webkit-transform:scale(1.5);
-  -o-transform:scale(1.5);
+  -o-transform:scale(1.5); */
 }
 
 .text{
@@ -820,12 +970,14 @@ filter: none;
 }
 
 .text:hover{
-  background: rgba(255, 255, 255, 0.5);    
+  background: rgba(0, 0, 0, 0.164);    
 }
 
 .text a{
   position: absolute;
   top: -100%;   
+  left: 2%; 
+  font-size:6vw;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -833,11 +985,27 @@ filter: none;
 }
 
 .text:hover a{    
+  color: white;
   top: 50%;
-} */
+  font-weight: bolder;
+  left: 2%; 
+  font-size:6vw;
+} 
+
+#thumbnail{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.google-map{
+  width:100%; 
+  height:300;
+}
 
 
-
+.member-image-size{
+  height: 300px;
+  width: 100%;
+}
 
 }
 
@@ -845,4 +1013,11 @@ filter: none;
   .logo{
     width: 150px;
   }
-}
+
+
+} 
+
+
+
+
+
