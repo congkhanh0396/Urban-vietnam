@@ -2,6 +2,43 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
+#button {
+  display: inline-block;
+  background-color: rgb(136, 135, 135);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0.9;
+  visibility: hidden;
+  z-index: 2000;
+  border-radius: 30px;
+}
+
+
+#button:hover {
+  cursor: pointer;
+  background-color: rgb(7, 7, 7);
+}
+
+#button.show {
+  opacity: .5;
+  visibility: visible;
+}
+
+
+
+
+
+
+
 body{
   margin: 0;
   padding: 0;
@@ -10,6 +47,10 @@ body{
   color: rgb(65, 65, 65);
   line-height: 1.6;
   font-size: 22px;
+}
+
+#font{
+  padding: 0 24px 0 24px;
 }
 
 section{
@@ -42,9 +83,9 @@ header .logo{
 
 
 header .img-logo{
-  width: 150px; 
-  height: 50px;
-  margin: 5px 0 0 0 ;
+  width: 100px; 
+  height: 40px;
+  margin: 5px 0 0 10px ;
 }
 
 
@@ -53,7 +94,7 @@ header nav{
   width: 100%;
   height: calc(100vh - 30px);
   background: rgb(235, 230, 230);
-  top: 60px;
+  /* top: 60px; */
   left: -100%;
   transition: 0.5s;
   
@@ -77,11 +118,11 @@ header nav ul li{
 }
 
 header nav ul li a{
-  height: 50px; 
+  /* height: 50px;  */
   line-height: 50px;
   display: block;
   color: #939393;
-  font-size: 24px;
+  font-size: 18px;
   transform: perspective(1px) translateZ(0);
   letter-spacing: 2px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -112,7 +153,7 @@ header nav ul li a{
 }
 
 .parallax-img {
-  background-image: url('./city.jpg') ;
+  background-image: url('city.jpg') ;
   
 }
 
@@ -184,16 +225,16 @@ header nav ul li a{
 
 .parallax_section{
   background: rgba(0,0,0,0.5);
-  background: url('./yokohama.jpg') center center/cover no-repeat fixed;
-  height: 300px;
+  background: url('yokohama.jpg') center center/cover no-repeat fixed;
+  height: 420px;
   opacity: 0.4;
 }
 
 .e-jan_section{
 background: rgba(0,0,0,0.5);
-    background: url('./01.jpg')center center/cover no-repeat fixed;
+    background: url('4k.jpg')center center/cover no-repeat fixed;
     opacity: 0.4;
-    height: 300px;
+    height: 420px;
 }
 
 .e-jan-logo{
@@ -242,7 +283,7 @@ background: rgba(0,0,0,0.5);
 
 .about-ejan{
   margin: auto;
-  font-size: 25px;
+  font-size: 20px;
   text-align: justify;
   font-weight: bold;
   color: #353535;
@@ -409,7 +450,6 @@ strong{
   color:#414141;
   font-size: 18px;
   width: 100%;
-  font-weight: bold;
   margin-top: 20px;
 }
 
@@ -422,7 +462,7 @@ strong{
 .read-more{
   padding: 8px;
   background: rgb(160, 159, 159);
-  width: 50%;
+  width: 180pxfont;
   margin: auto;
   text-decoration: none;
   color: #fff;
@@ -455,12 +495,13 @@ strong{
   display: flex;
 }
 
+
 #google{
   flex-direction: column-reverse;
 }
 
 footer{
-  background: #414141;
+  background: rgb(243, 243, 243);
   height: 100%;
 }
 
@@ -473,9 +514,10 @@ footer{
 }
 
 .footer-text{
-  color: #fff;
+  color: #414141;
   font-size: 14px;
   text-align: center;
+  padding: 24px;
 }
 
 #panel{
@@ -540,7 +582,7 @@ footer{
 
   .image-shiten{
     display: flex;
-    width: 90%;
+    width: 92%;
     height: 100%;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -560,10 +602,6 @@ footer{
     margin: 5% 0 5% 0;
   }
 
-  
-
-
-  
 
 }
 
@@ -638,9 +676,9 @@ footer{
 
   .image-shiten{
     display: flex;
-    width: 60%;
+    width: 85%;
     height: 100%;
-    margin: auto;
+    /* margin: auto; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -835,12 +873,18 @@ footer{
     height: 50%;
   }
   
-  
-header nav ul{
-  display: inline;
-  text-align: center;
-  padding: 0;
-}
+  .detail-company{
+    font-weight: normal;
+  }
+
+
+
+
+
+
+
+
+
 
 
 
