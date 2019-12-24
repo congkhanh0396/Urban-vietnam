@@ -5,34 +5,53 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 <body>
 
-    <header>
-        <img class="img-logo" src="urban.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="" style="color: #d8092f;">HOME</a></li>
-                <li><a href="#urban">URBAN COMPANY</a></li>
-                <li><a href="#e-jan">e-jan</a></li>
-                <li><a href="#member">NHÂN VIÊN</a></li>
-                <li><a href="#job">TUYỂN DỤNG</a></li>
-                <li><a href="#contact">LIÊN HỆ</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-    </header>
+    <div id="cover">
+        <div id="loading-text">Loading . . .</div>
+        <div class="mark">
 
-    <div class="wrapper">
-        <div class="parallax-img"></div>
-        <div><img class="Urban-logo" src="urban.png" alt="Urban-logo">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" class="base">
+                    <circle class="a" cx="23" cy="23" r="20"></circle>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" class="loader">
+                    <circle class="a" cx="23" cy="23" r="20"></circle>
+                </svg>
+            </div>
         </div>
     </div>
-    <section id="urban">
-        <a id="button"><i class="fas fa-arrow-up" style="color: #fff; padding-top: 15px"></i></a>
-        <h1>Giới thiệu công ty Urban</h1>
-        <div class="container">
-            <div class="box-1">
-                <div class="flag-company"><img style="width: 100%; height: 100%;"
+
+    <div class="myDiv">
+        <header>
+            <img class="img-logo" src="urban.png" alt="">
+            <nav>
+                <ul>
+                    <li class="link"><a href="" style="color: #d8092f;">HOME</a></li>
+                    <li class="link"><a href="#urban">URBAN COMPANY</a></li>
+                    <li class="link"><a href="#e-jan">e-jan</a></li>
+                    <li class="link"><a href="#member">NHÂN VIÊN</a></li>
+                    <li class="link"><a href="#job">TUYỂN DỤNG</a></li>
+                    <li class="link"><a href="#contact">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </header>
+
+
+
+        <div class="wrapper">
+            <div class="parallax-img"></div>
+            <div><img class="Urban-logo" src="urban.png" alt="Urban-logo">
+            </div>
+        </div>
+        <section id="urban">
+            <a id="button"><i class="fas fa-arrow-up" style="color: #fff; padding-top: 15px"></i></a>
+            <h1>Giới thiệu công ty Urban</h1>
+            <div class="container">
+                <div class="box-1" id="box-1" style="margin-bottom: 20px;">
+                    <!-- <div class="flag-company"><img style="width: 100%; height: 100%;"
                         src="Flag_of_Japan_(bordered).svg" alt=""></div>
                 <div class="name-company">URBAN CORPORATION</div>
                 <div class="detail-company">Công ty được thành lập từ tháng 10 năm 1992, hiện nay có trụ sở giao
@@ -41,11 +60,25 @@
                     Tổng nhân viên toàn bộ hệ thống: 240 người<br>
                     Lĩnh vực hoạt động: Nghiên cứu phát triển phần mềm, gia công phần mềm, EC, dịch vụ kế toán
                     Cloud
+                </div> -->
+                    <article class="card">
+                        <div class="thumb-1"></div>
+                        <div class="infos">
+                            <h2 class="title">URBAN CORPORATION<span class="flag-1"></span></h2>
+                            <h3 class="date">Thành lập: Tháng 10 năm 1992</h3>
+                            <p class="txt">
+                                hiện nay có trụ sở giao dịch tại tầng 17 Wisport
+                                Building, 2-6-3, Takashima, Nishi-ku thành phố Yokohama, tỉnh Kanagawa, Nhật Bản
+                                Tổng nhân viên toàn bộ hệ thống: 240 người
+                                Lĩnh vực hoạt động: Nghiên cứu phát triển phần mềm, gia công phần mềm, EC, dịch vụ kế
+                                toán Cloud
+                            </p>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="box-2">
+                <div class="box-2" id="box-2" style="margin-bottom: 20px;">
 
-                <div class="flag-company"><img style="width: 100%; height: 100%;" src="flag_of_vn.png" alt="">
+                    <!-- <div class="flag-company"><img style="width: 100%; height: 100%;" src="flag_of_vn.png" alt="">
                 </div>
                 <div class="name-company">URBAN VIỆT NAM</div>
                 <div class="detail-company">Nhằm mở rộng kinh doanh, tháng 11 năm 2016, chúng tôi đã thành lập Công
@@ -54,16 +87,28 @@
                     Thiết lập website e-jan.vn nằm cung cấp dịch vụ mua sắm trực tuyến các sản phẩm mỹ phẩm,
                     thực phẩm, đồ uống, thực phẩm chức năng, vv... made in Japan được nhập khẩu trực tiếp tại
                     Nhật Bản
+                </div> -->
+                    <article class="card">
+                        <div class="thumb-2"></div>
+                        <div class="infos">
+                            <h2 class="title">URBAN VIỆT NAM<span class="flag-2"></span></h2>
+                            <h3 class="date">Thành lập: tháng 11 năm 2016</h3>
+                            <p class="txt">
+                                Nhằm mở rộng kinh doanh, tháng 11 năm 2016, chúng tôi đã thành lập Công
+                                Ty URBAN VIỆT NAM
+                                Tuyển dụng và đào tạo kỹ sư IT nhằm đưa sang làm việc trong Tổng công ty tại Nhật Bản.
+                            </p>
+                        </div>
+                    </article>
+
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h1>Chi nhánh</h1>
-        <div class="container">
-            <div class="box-1">
+        <section>
+            <h1>Chi nhánh</h1>
+            <div class="container">
+                <!-- <div class="box-1">
                 <div class="image-shiten"><img style="margin:auto;" id="fix" src="company.jpg" alt="">
                 </div>
             </div>
@@ -87,310 +132,384 @@
                 <div class="detail-company" style="text-align: center; margin-bottom: 10px;">A95 Nguyễn Thần
                     Hiến, Phường 18, Quận 4, TP.HCM.
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="parallax_section" style="margin-top: 50px;">
-
-    </section>
-
-    <section style="background-color: floralwhite; padding-bottom: 50px;">
-        <div id="e-jan" style="margin: 0; padding-top: 50px; padding-bottom: 80px">
-            <a href="https://e-jan.vn/" target="_blank"><img class="e-jan-logo" src="ejan.svg" alt="e-jan"></a>
-        </div>
-        <!-- <h1>Giới thiệu về e-jan</h1> -->
-        <div class="container">
-            <div class="box-1">
-                <div class="image-ejan darken-pseudo darken-with-text">
-                    <img style="width: 100%; height: 100%;" style=" opacity:0.7" src="e-jan.jpg" alt="">
-                    <h2>About us</h2>
-                </div>
-            </div>
-            <div class="box-2">
-                <div class="about-ejan intro-ejan-1">
-                    <span>1.</span>Sản phẩm Nhật Bản<br>
-                    <span>2.</span>Chất lượng tốt nhất<br>
-                    <span>3.</span>Giá cả cạnh tranh
-                </div>
-            </div>
-        </div>
-        <div class="container" id="google">
-            <div class="box-1">
-                <div class="about-ejan intro-ejan-2">
-                    <p class="one-edge-shadow">Phụ vụ nhiệt tình</p><br>
-                    <p class="one-edge-shadow">Mọi lúc mọi nơi</p><br>
-                    <p class="one-edge-shadow">Giao hàng nhanh chóng</p>
-                </div>
-            </div>
-            <div class="box-2">
-                <iframe class="e-jan-video" src="https://www.youtube.com/embed/KjwHuW-AFgU?controls=0" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <h1>Dịch Vụ</h1>
-        <div class="container">
-            <div class="hako-1">
-                <div class="hako-image"><img class="hako-image " src="04.png" alt="service">
-                </div>
-                <div class="hako-title">Giao hàng tiện lợi</div>
-                <div class="hako-detail">Đảm bảo thời gian nhanh nhất.</div>
-            </div>
-            <div class="hako-2">
-                <div class="hako-image"><img class="hako-image " src="05.png" alt="service">
-                </div>
-                <div class="hako-title">Đặt hàng mọi lúc mọi nơi</div>
-                <div class="hako-detail">Bạn có thể đặt sản phẩm trên mọi thiết bị.</div>
-            </div>
-            <div class="hako-3">
-                <div class="hako-image"><img class="hako-image " src="06.png" alt="service">
-                </div>
-                <div class="hako-title">Hỗ trợ viên online</div>
-                <div class="hako-detail">Luôn trực 24/24 để phục vụ bạn tốt nhất.</div>
-            </div>
-            <div class="hako-4">
-                <div class="hako-image"><img class="hako-image " src="07.png" alt="service">
-                </div>
-                <div class="hako-title">Thao tác đơn giản</div>
-                <div class="hako-detail">Chỉ vài cú click chuột bạn có thể đặt được sp.</div>
-            </div>
-            <div class="hako-5">
-                <div class="hako-image"><img class="hako-image " src="08.png" alt="service">
-                </div>
-                <div class="hako-title">Chất lượng dịch vụ</div>
-                <div class="hako-detail">Chỉ vài cú click chuột bạn có thể đặt được sp.</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="e-jan_section">
-        <!-- style="margin-top: 50px;" -->
-    </section>
-
-    <section>
-        <h1>Hình ảnh sinh hoạt nhân viên ở nhật</h1>
-        <section>
-            <div class="container" id="member">
-                <div class="member-box-left">
-                    <div class="member-border-box">
-                        <div class="member-box-content">
-                            <strong>Hình ảnh hoạt động ở Nhật</strong><br>
-                            Đây là những hình ảnh về các hoạt động như họp IT, bàn bạc kế hoạch cho dự án mới. Như
-                            các bạn có thể thấy thì bên cạnh là hình ảnh giới thiệu nhân viên mới ở Nhật Bản.
+            </div> -->
+                <div class="flex-25per" id="column">
+                    <div class="cards__item">
+                        <div class="company-card">
+                            <div class="card__image yokohama"></div>
+                            <div class="card__content">
+                                <div class="card__title">Yokohama</div>
+                                <p class="card__text">Trung tâm văn phòng Miyagi
+                                    Thành phố Tagajo, tỉnh Miyagi</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="member-box-right">
-                    <div class="member-box-image">
-                        <div class="member-box-image-1" ><img class="size-image one-edge-shadow"
-                                src="thanh.jpg" alt="">
+                <div class="flex-25per" id="column">
+                    <div class="cards__item">
+                        <div class="company-card">
+                            <div class="card__image sapporo"></div>
+                            <div class="card__content">
+                                <div class="card__title">Sapporo</div>
+                                <p class="card__text">Văn phòng chi nhánh ở Sapporo
+                                    Thành phố Sapporo</p>
+                            </div>
                         </div>
-                        <div class="member-box-image-2"><img class="size-image one-edge-shadow"
-                                src="thanh-1.jpg" alt=""></div>
-                        <div class="member-box-image-3"><img class="size-image one-edge-shadow"
-                                src="thanh-2.jpg" alt=""></div>
-                        <div class="member-box-image-4"><img class="size-image  one-edge-shadow"
-                                src="thanh-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-25per" id="column">
+                    <div class="cards__item">
+                        <div class="company-card">
+                            <div class="card__image sendai"></div>
+                            <div class="card__content">
+                                <div class="card__title">Sendai</div>
+                                <p class="card__text">Trung tâm văn phòng Miyagi
+                                    Thành phố Tagajo, tỉnh Miyagi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-25per" id="column">
+                    <div class="cards__item">
+                        <div class="company-card">
+                            <div class="card__image vietnam"></div>
+                            <div class="card__content">
+                                <div class="card__title">Việt Nam</div>
+                                <p class="card__text">A95 Nguyễn Thần Hiến, Phường 18, Quận 4, TP.HCM.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="margin-bottom">
-            <h1 id="member">Nhân viên hiện đang làm việc tại Nhật </h1>
+        <section class="parallax_section" style="margin-top: 50px;">
+
+        </section>
+
+        <section style="background-color: floralwhite; padding-bottom: 50px;">
+            <div id="e-jan" style="margin: 0; padding-top: 50px; padding-bottom: 80px">
+                <a href="https://e-jan.vn/" target="_blank"><img class="e-jan-logo" src="ejan.svg" alt="e-jan"></a>
+            </div>
+            <!-- <h1>Giới thiệu về e-jan</h1> -->
             <div class="container">
-                <div class="flex-4"><img id="padding-left" class="urban-member" src="thanh.jpg" alt=""></div>
-                <div class="flex-6">
-                    <div class="urban-member-title">
-                        <h2>Trịnh Minh Thành</h2>
-                        2013-2017: ĐH Công nghệ Hutech<br>
-                        2017 - 2019: URBAN Việt Nam<br>
-                        8/2019 - Hiện tại: URBAN Nhật<br>
+                <div class="box-1">
+                    <div class="image-ejan darken-pseudo darken-with-text">
+                        <img style="width: 100%; height: 100%;" style=" opacity:0.7" src="e-jan.jpg" alt="">
+                        <h2>About us</h2>
                     </div>
-                    <a id="flip" class="read-more" style=" margin-bottom: 20px;
+                </div>
+                <div class="box-2">
+                    <div class="about-ejan intro-ejan-1">
+                        <span>1.</span>Sản phẩm Nhật Bản<br>
+                        <span>2.</span>Chất lượng tốt nhất<br>
+                        <span>3.</span>Giá cả cạnh tranh
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="google">
+                <div class="box-1">
+                    <div class="about-ejan intro-ejan-2">
+                        <p class="one-edge-shadow">Phụ vụ nhiệt tình</p><br>
+                        <p class="one-edge-shadow">Mọi lúc mọi nơi</p><br>
+                        <p class="one-edge-shadow">Giao hàng nhanh chóng</p>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <iframe class="e-jan-video" src="https://www.youtube.com/embed/KjwHuW-AFgU?controls=0"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <h1>Dịch Vụ</h1>
+            <div class="container">
+                <div class="hako-1">
+                    <div class="hako-image"><img class="hako-image " src="04.png" alt="service">
+                    </div>
+                    <div class="hako-title">Giao hàng tiện lợi</div>
+                    <div class="hako-detail">Đảm bảo thời gian nhanh nhất.</div>
+                </div>
+                <div class="hako-2">
+                    <div class="hako-image"><img class="hako-image " src="05.png" alt="service">
+                    </div>
+                    <div class="hako-title">Đặt hàng mọi lúc mọi nơi</div>
+                    <div class="hako-detail">Bạn có thể đặt sản phẩm trên mọi thiết bị.</div>
+                </div>
+                <div class="hako-3">
+                    <div class="hako-image"><img class="hako-image " src="06.png" alt="service">
+                    </div>
+                    <div class="hako-title">Hỗ trợ viên online</div>
+                    <div class="hako-detail">Luôn trực 24/24 để phục vụ bạn tốt nhất.</div>
+                </div>
+                <div class="hako-4">
+                    <div class="hako-image"><img class="hako-image " src="07.png" alt="service">
+                    </div>
+                    <div class="hako-title">Thao tác đơn giản</div>
+                    <div class="hako-detail">Chỉ vài cú click chuột bạn có thể đặt được sp.</div>
+                </div>
+                <div class="hako-5">
+                    <div class="hako-image"><img class="hako-image " src="08.png" alt="service">
+                    </div>
+                    <div class="hako-title">Chất lượng dịch vụ</div>
+                    <div class="hako-detail">Chỉ vài cú click chuột bạn có thể đặt được sp.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="e-jan_section">
+            <!-- style="margin-top: 50px;" -->
+        </section>
+
+        <section>
+            <h1>Hình ảnh nhân viên ở nhật</h1>
+            <section>
+                <div class="container" id="member">
+                    <div class="member-box-left">
+                        <div class="member-border-box">
+                            <div class="member-box-content">
+                                <strong>Hình ảnh hoạt động ở Nhật</strong><br>
+                                Đây là những hình ảnh về các hoạt động như họp IT, bàn bạc kế hoạch cho dự án mới. Như
+                                các bạn có thể thấy thì bên cạnh là hình ảnh giới thiệu nhân viên mới ở Nhật Bản.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-box-right">
+                        <div class="member-box-image">
+                            <div class="member-box-image-1"><img class="size-image one-edge-shadow" src="thanh.jpg"
+                                    alt="">
+                            </div>
+                            <div class="member-box-image-2"><img class="size-image one-edge-shadow" src="thanh-1.jpg"
+                                    alt=""></div>
+                            <div class="member-box-image-3"><img class="size-image one-edge-shadow" src="thanh-2.jpg"
+                                    alt=""></div>
+                            <div class="member-box-image-4"><img class="size-image  one-edge-shadow" src="thanh-3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="margin-bottom">
+                <h1 id="member">Nhân viên đang làm việc ở Nhật </h1>
+                <div class="container">
+                    <div class="flex-4"><img id="padding-left" class="urban-member" src="thanh.jpg" alt=""></div>
+                    <div class="flex-6">
+                        <div class="urban-member-title">
+                            <h2>Trịnh Minh Thành</h2>
+                            2013-2017: ĐH Công nghệ Hutech<br>
+                            2017 - 2019: URBAN Việt Nam<br>
+                            8/2019 - Hiện tại: URBAN Nhật<br>
+                        </div>
+                        <a id="flip" class="read-more" style=" margin-bottom: 20px;
                     margin-top: 20px;">Xem tiểu sử</a>
 
-                    <div class="urban-member-detail" id="panel">
-                        <div style="padding: 0 30px 0 30px;">
-                            Trịnh Minh Thành là một sinh viên tốt nghiệp ngành Mạng máy tính. Từ lâu, anh đã ấp ủ một
-                            hoài
-                            bão được làm việc và trải nghiệm cuộc sống ở đất nước mặt trời mọc. Chính vì thế, trong suốt
-                            quá
-                            trình còn học tập ở Việt Nam, anh đã cố gắng không ngừng tự trao dồi năng lực Nhật ngữ của
-                            bản
-                            thân mỗi ngày thông qua những nguồn tài liệu sẵn có với mục tiêu có thể thành công vượt vũ
-                            môn
-                            trong kì thi JLPT (Japanese Language Proficiency Test) cấp độ N3, từ đó có đủ kĩ năng ngôn
-                            ngữ
-                            và kiến thức thường thức để bắt đầu một cuộc sống tự lập tại Nhật Bản.
+                        <div class="urban-member-detail" id="panel">
+                            <div style="padding: 0 30px 0 30px;">
+                                Trịnh Minh Thành là một sinh viên tốt nghiệp ngành Mạng máy tính. Từ lâu, anh đã ấp ủ
+                                một
+                                hoài
+                                bão được làm việc và trải nghiệm cuộc sống ở đất nước mặt trời mọc. Chính vì thế, trong
+                                suốt
+                                quá
+                                trình còn học tập ở Việt Nam, anh đã cố gắng không ngừng tự trao dồi năng lực Nhật ngữ
+                                của
+                                bản
+                                thân mỗi ngày thông qua những nguồn tài liệu sẵn có với mục tiêu có thể thành công vượt
+                                vũ
+                                môn
+                                trong kì thi JLPT (Japanese Language Proficiency Test) cấp độ N3, từ đó có đủ kĩ năng
+                                ngôn
+                                ngữ
+                                và kiến thức thường thức để bắt đầu một cuộc sống tự lập tại Nhật Bản.
 
-                            Với xuất phát điểm của bản thân không thuộc mảng Lập trình, với anh việc trở thành một lập
-                            trình
-                            viên chưa bao giờ là dễ dàng. Nhưng, bằng tất cả sự nỗ lực và kiên trì luyện tập hằng ngày
-                            cùng
-                            tinh thần ham học hỏi không ngại thách thức của bản thân, anh đã chứng minh được một công
-                            việc
-                            phức tạp đòi hỏi sự chính xác cao như lập trình cũng không thể làm anh chùng bước.
+                                Với xuất phát điểm của bản thân không thuộc mảng Lập trình, với anh việc trở thành một
+                                lập
+                                trình
+                                viên chưa bao giờ là dễ dàng. Nhưng, bằng tất cả sự nỗ lực và kiên trì luyện tập hằng
+                                ngày
+                                cùng
+                                tinh thần ham học hỏi không ngại thách thức của bản thân, anh đã chứng minh được một
+                                công
+                                việc
+                                phức tạp đòi hỏi sự chính xác cao như lập trình cũng không thể làm anh chùng bước.
 
-                            Bên cạnh tinh thần cầu tiến của bản thân, anh còn là một hình mẫu lý tưởng để học tập bởi sự
-                            chuyên nghiệp trong việc hoàn thành xuất sắc mọi công việc được giao mà vẫn đảm bảo đúng
-                            tiến độ
-                            hoạch định ban đầu.
+                                Bên cạnh tinh thần cầu tiến của bản thân, anh còn là một hình mẫu lý tưởng để học tập
+                                bởi sự
+                                chuyên nghiệp trong việc hoàn thành xuất sắc mọi công việc được giao mà vẫn đảm bảo đúng
+                                tiến độ
+                                hoạch định ban đầu.
 
-                            Không chỉ ở phong cách làm việc chuyên nghiệp, anh còn được đồng nghiệp hết lời khen ngợi về
-                            thái độ ân cần, hòa nhã của mình. Anh luôn sẵn sàng giúp đỡ đồng nghiệp lúc khó khăn để cùng
-                            chung tay xây dựng một tập thể vững mạnh.
+                                Không chỉ ở phong cách làm việc chuyên nghiệp, anh còn được đồng nghiệp hết lời khen
+                                ngợi về
+                                thái độ ân cần, hòa nhã của mình. Anh luôn sẵn sàng giúp đỡ đồng nghiệp lúc khó khăn để
+                                cùng
+                                chung tay xây dựng một tập thể vững mạnh.
 
 
-                            Sau tất cả, bằng những nỗ lực hết mình trong thái độ làm việc và lối sống, anh đã thành công
-                            chạm tay vào tấm bằng N3 danh giá và đã chính thức trở thành một kỹ sư phần mềm làm việc tại
-                            Nhật Bản.</div>
+                                Sau tất cả, bằng những nỗ lực hết mình trong thái độ làm việc và lối sống, anh đã thành
+                                công
+                                chạm tay vào tấm bằng N3 danh giá và đã chính thức trở thành một kỹ sư phần mềm làm việc
+                                tại
+                                Nhật Bản.</div>
+                        </div>
                     </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <div class="container" id="google">
+                <div class="flex-3" style="margin-bottom: 5%;"><img class="image-shiten sport"
+                        style=" background-attachment: fixed; " src="30.jpg" />
+                </div>
+                <div class="flex-3" style="margin-bottom: 5%;"><img class="image-shiten"
+                        style=" background-attachment: fixed; " src="31.jpg" />
+                </div>
+                <div class="flex-4" id="column" style="justify-content: center;">
+                    <h4 style=" margin: 10px; padding: 10px; background: #222222; color: #fff">Hoạt động event thể dục
+                        thể
+                        thao.
+                    </h4>
+                    <p id="event">Các event lớn của công ty tổ chức mỗi năm:<br>
+                        Tháng 7 BBQ ngoài trời<br>
+                        Tháng 10 Thể dục thể Thao<br>
+                        Tháng 12 Du lịch & ăn liên hoan cuối năm.
+                    </p>
                 </div>
             </div>
         </section>
-    </section>
 
-    <section>
-        <div class="container" id="google">
-            <div class="flex-3"><img class="image-shiten" style=" background-attachment: fixed; "
-                    src="30.jpg" /></div>
-            <div class="flex-3"><img class="image-shiten" style=" background-attachment: fixed; "
-                    src="31.jpg" /></div>
-            <div class="flex-4" id="column">
-                <h4 style=" margin: 10px; padding: 10px; background: #222222; color: #fff">Hoạt động event thể dục thể
-                    thao.
-                </h4>
-                <p style="margin: 0; padding: 5px;">Các event lớn của công ty tổ chức mỗi năm:<br>
-                    Tháng 7 BBQ ngoài trời<br>
-                    Tháng 10 Thể dục thể Thao<br>
-                    Tháng 12 Du lịch & ăn liên hoan cuối năm.
-                </p>
+        <section id="margin-bottom-top">
+            <div class="container" id="google">
+                <div class="flex-25">
+                    <h4 style="margin: auto; padding: 10px; background: #222222; color: #fff">Du lịch cuối năm với công
+                        ty
+                    </h4>
+                </div>
+                <div class="flex-75" style="margin-bottom: 5%;"><img class="image-shiten size-image" style=" background-attachment: fixed; "
+                        src="35.jpg" /></div>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="margin-bottom-top">
-        <div class="container" id="google">
-            <div class="flex-25" id="column">
-                <h4 style=" margin: auto; padding: 10px; background: #222222; color: #fff">Du lịch cuối năm với công ty
-                </h4>
+        <section id="margin-bottom-top">
+            <div class="container">
+                <div class="flex-4" id="column">
+                    <h4 style="margin: auto; padding: 5px; background: #222222; color: #fff">Đôi nét về URBAN
+                        CORPORATION
+                    </h4>
+                </div>
+                <div class="flex-6">
+                    <iframe id="video" class="e-jan-video" src="https://www.youtube.com/embed/pO01y3hPUSA"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="flex-75"><img class="image-shiten size-image" style=" background-attachment: fixed; "
-                    src="35.jpg" /></div>
+        </section>
 
-        </div>
-    </section>
+        <section id="margin-bottom-top">
+            <h1 id="job">Tuyển dụng kỹ sư đi Nhật.</h1>
+            <div class="container">
+                <div class="flex-25per" id="column">
+                    <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Điều kiện tuyển
+                        dụng
+                    </h4>
+                    <p id="font">Giới tính: Nam, Nữ<br>
+                        Độ tuổi: từ 22 tuổi đến 29 tuổi - Chiều cao: 1m65
+                        Cân nặng: 50kg (đối với nam)
+                        Chiều cao: 1m55, cân nặng: 45kg (đối với nữ)<br>
+                        Trình độ văn hóa: Tốt nghiệp Đại học, Cao đẳng chuyên ngành: kỹ sư lập trình, thiết kế
+                        phần mềm, công nghệ thông tin.<br>
+                        Yêu cầu : Đam mê với công việc, chịu khó học hỏi<br>
+                        Tiếng Nhật: tùy vào yêu cầu công việc phải đạt tối thiều N3, N2 là một lợi thế.</p>
+                </div>
+                <div class="flex-25per" id="column">
+                    <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Nội dung
+                    </h4>
+                    <p id="font" style="overflow: scroll; max-height: 400px;">Đào tạo : làm việc tại URBAN-ViệtNam (phải
+                        Trên 1 năm).
+                        URBAN-group sẽ chịu hoàn toàn tất cả các chi phí phát sinh : làm giấy tờ, vé máy bay, hộ
+                        trợ tìm kiếm thuê phòng...
+                        Khi đến Nhật : sẽ được đạo tạo làm việc tại trụ sở Yokohama (khoản 3 tháng).
+                        Nơi được bổ nhiệm đi công tác : Tokyo, Yokohama, Chiba...
+                        Ngành nghề: Kỹ sư lập trình, kỹ sư thiết kế phần mềm, kĩ sư công nghệ thông tin...
+                        Thời hạn hợp đồng: Gia hạn theo từng năm, có thể ở lại Nhật Bản vĩnh trú.
+                        Được cấp vĩnh trú luôn sau 1 năm với kĩ ✣sư bậc cao- số 2 (80 điểm) và được cấp vĩnh trú
+                        sau 3 năm với kĩ sư bậc cao-cấp độ 1. Sau khi được cấp Vĩnh trú được phép bão lãnh vợ
+                        con và bố mẹ chồng/vợ sang Nhật</p>
+                </div>
+                <div class="flex-25per" id="column">
+                    <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Chế độ lương
+                        thưởng
+                    </h4>
+                    <p id="font">Mức lương: được tính theo luật lao động ở Nhật Bản, mức lương cơ bản: 200.000 – 250.000
+                        (khoảng 41 triệu – 51 triệu VNĐ)
+                        Giờ làm thêm: mức lương được tính theo chế độ luật lao động Nhật Bản 150% so với lương
+                        cơ bản)
+                        Thời gian làm việc: Khoản Từ 09:30 đến 18:30 (nghỉ giải lao 60 phút) – 1 ngày 08 tiếng.
+                        Tùy vào nơi công tác thời gian có thể thay đổi.
+                        Ngày nghỉ: Thứ 7, chủ nhật hàng tuần, lễ tết theo phong tục Nhật Bản (làm thêm nếu có
+                        mong muốn và đăng ký)</p>
+                </div>
 
-    <section id="margin-bottom-top">
-        <div class="container">
-            <div class="flex-4" id="column">
-                <h4 style="margin: auto; padding: 5px; background: #222222; color: #fff">Đôi nét về URBAN CORPORATION
-                </h4>
+                <div class="flex-25per" id="column">
+                    <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Thủ tục hồ sơ đăng
+                        ký
+                    </h4>
+                    <p id="font">Bằng tốt nghiệp ĐH khối IT, kĩ thuật lập trình, thiết kế phần mềm, CNTT<br>
+                        Chứng chỉ tiếng Nhật : ( JLPT, NATTEST, TOP-J)<br>
+                        Chứng chỉ bằng cấp tiếng Anh : nếu có càng tốt (TOEIC, TOEFL, TEAP)<br>
+                </div>
+
+
             </div>
-            <div class="flex-6">
-                <iframe id="video" class="e-jan-video" src="https://www.youtube.com/embed/pO01y3hPUSA" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="margin-bottom-top">
-        <h1 id="job">Tuyển dụng kỹ sư đi Nhật.</h1>
-        <div class="container">
-            <div class="flex-25per" id="column">
-                <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Điều kiện tuyển dụng
-                </h4>
-                <p id="font">Giới tính: Nam, Nữ<br>
-                    Độ tuổi: từ 22 tuổi đến 29 tuổi - Chiều cao: 1m65
-                    Cân nặng: 50kg (đối với nam)
-                    Chiều cao: 1m55, cân nặng: 45kg (đối với nữ)<br>
-                    Trình độ văn hóa: Tốt nghiệp Đại học, Cao đẳng chuyên ngành: kỹ sư lập trình, thiết kế
-                    phần mềm, công nghệ thông tin.<br>
-                    Yêu cầu : Đam mê với công việc, chịu khó học hỏi<br>
-                    Tiếng Nhật: tùy vào yêu cầu công việc phải đạt tối thiều N3, N2 là một lợi thế.</p>
-            </div>
-            <div class="flex-25per" id="column">
-                <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Nội dung
-                </h4>
-                <p id="font">Đào tạo : làm việc tại URBAN-ViệtNam (phải Trên 1 năm).
-                    URBAN-group sẽ chịu hoàn toàn tất cả các chi phí phát sinh : làm giấy tờ, vé máy bay, hộ
-                    trợ tìm kiếm thuê phòng...
-                    Khi đến Nhật : sẽ được đạo tạo làm việc tại trụ sở Yokohama (khoản 3 tháng).
-                    Nơi được bổ nhiệm đi công tác : Tokyo, Yokohama, Chiba...
-                    Ngành nghề: Kỹ sư lập trình, kỹ sư thiết kế phần mềm, kĩ sư công nghệ thông tin...
-                    Thời hạn hợp đồng: Gia hạn theo từng năm, có thể ở lại Nhật Bản vĩnh trú.
-                    Được cấp vĩnh trú luôn sau 1 năm với kĩ ✣sư bậc cao- số 2 (80 điểm) và được cấp vĩnh trú
-                    sau 3 năm với kĩ sư bậc cao-cấp độ 1. Sau khi được cấp Vĩnh trú được phép bão lãnh vợ
-                    con và bố mẹ chồng/vợ sang Nhật</p>
-            </div>
-            <div class="flex-25per" id="column">
-                <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Chế độ lương thưởng
-                </h4>
-                <p id="font">Mức lương: được tính theo luật lao động ở Nhật Bản, mức lương cơ bản: 200.000 – 250.000
-                    (khoảng 41 triệu – 51 triệu VNĐ)
-                    Giờ làm thêm: mức lương được tính theo chế độ luật lao động Nhật Bản 150% so với lương
-                    cơ bản)
-                    Thời gian làm việc: Khoản Từ 09:30 đến 18:30 (nghỉ giải lao 60 phút) – 1 ngày 08 tiếng.
-                    Tùy vào nơi công tác thời gian có thể thay đổi.
-                    Ngày nghỉ: Thứ 7, chủ nhật hàng tuần, lễ tết theo phong tục Nhật Bản (làm thêm nếu có
-                    mong muốn và đăng ký)</p>
-            </div>
+        <section id="margin-bottom-top">
+            <div class="container" id="google">
 
-            <div class="flex-25per" id="column">
-                <h4 style=" padding: 5px; background: #222222; color: #fff; margin: 0 5px 0 5px;">Thủ tục hồ sơ đăng ký
-                </h4>
-                <p id="font">Bằng tốt nghiệp ĐH khối IT, kĩ thuật lập trình, thiết kế phần mềm, CNTT<br>
-                    Chứng chỉ tiếng Nhật : ( JLPT, NATTEST, TOP-J)<br>
-                    Chứng chỉ bằng cấp tiếng Anh : nếu có càng tốt (TOEIC, TOEFL, TEAP)<br>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section id="margin-bottom-top">
-        <div class="container" id="google">
-
-            <div class="flex-6">
-                <!-- <iframe id="video" class="e-jan-video" src="https://www.youtube.com/embed/pO01y3hPUSA" frameborder="0"
+                <div class="flex-6">
+                    <!-- <iframe id="video" class="e-jan-video" src="https://www.youtube.com/embed/pO01y3hPUSA" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe> -->
-                <iframe id="video" class="e-jan-video"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.740225545087!2d106.71426331455453!3d10.754492992336452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f7b415f2283%3A0x451bb1b091b6d89f!2zQTk1IE5ndXnhu4VuIFRo4bqnbiBIaeG6v24sIFBoxrDhu51uZyAxOCwgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574219224881!5m2!1svi!2s"
-                    frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe id="video" class="e-jan-video" poster="/images/w3schools_green.jpg"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.740225545087!2d106.71426331455453!3d10.754492992336452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f7b415f2283%3A0x451bb1b091b6d89f!2zQTk1IE5ndXnhu4VuIFRo4bqnbiBIaeG6v24sIFBoxrDhu51uZyAxOCwgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574219224881!5m2!1svi!2s"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="flex-4" id="column">
+                    <h4 style="margin: auto; padding: 5px; background: #d8092f; color: #fff">A95 Nguyễn Thần Hiến,
+                        Phường
+                        18, Quận 4, TP.HCM.
+                    </h4>
+                </div>
             </div>
-            <div class="flex-4" id="column">
-                <h4 style="margin: auto; padding: 5px; background: #d8092f; color: #fff">A95 Nguyễn Thần Hiến, Phường
-                    18, Quận 4, TP.HCM.
-                </h4>
+        </section>
+
+        <footer id="contact">
+            <div class="div-footer">
             </div>
-        </div>
-    </section>
+            <p class="footer-text"> TEL 028 225 37034 - 028 225 37034<br>
+                info@e-jan.vn<br>
+                Trang web e-jan mua sắm trực tuyến cho người Việt<br>
+                https://e-jan.vn/<br>
+                Copyright © 2019 Urban Viet Nam Inc,. All right reserved.<br>
+                <a href="https://www.facebook.com/ejanvietnam/" target="_blank">
+                    <i class="fab fa-facebook-square " style="font-size: 25px; color: gray"></i></a>
+            </p>
+            <!-- <div class="div-footer"><a href="https://www.facebook.com/ejanvietnam/" target="_blank"><i class="fab fa-facebook-square"></i></a></div> -->
+        </footer>
 
-    <footer id="contact">
-        <div class="div-footer">
-        </div>
-        <p class="footer-text"> TEL 028 225 37034 - 028 225 37034<br>
-            info@e-jan.vn<br>
-            Trang web e-jan mua sắm trực tuyến cho người Việt<br>
-            https://e-jan.vn/<br>
-            Copyright © 2019 Urban Viet Nam Inc,. All right reserved.<br>
-            <a href="https://www.facebook.com/ejanvietnam/" target="_blank">
-            <i class="fab fa-facebook-square " style="font-size: 25px; color: gray"></i></a>
-        </p>
-        <!-- <div class="div-footer"><a href="https://www.facebook.com/ejanvietnam/" target="_blank"><i class="fab fa-facebook-square"></i></a></div> -->
-    </footer>
-
-
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            });
+            $('.link').click(function () {
                 $('nav').toggleClass('active');
             })
         })

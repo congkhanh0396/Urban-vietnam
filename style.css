@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -5,6 +9,365 @@ html{
 #fix{
   width: 100%;
 }
+
+
+#event{
+  margin: 0; padding: 5px;
+  font-size: 5vw;
+}
+
+.card{
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  /* width: 350px; */
+  height: 350px;
+  -webkit-transform:  translateZ(0);
+          transform:  translateZ(0);
+}
+
+.thumb-1{
+  width: auto;
+  height: 260px;
+  background: url("jp.jpeg") no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.sport{
+  width: unset !important;
+  margin: auto;
+}
+
+.thumb-2{
+  width: auto;
+  height: 260px;
+  background: url("vietnam.jpeg") no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+article.card .infos {
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding: 14px 24px;
+  background: #fff;
+  transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+
+article.card .infos .title {
+  position: relative;
+  margin: 10px 0;
+  text-align: left;
+  color: #152536;
+  font-family: "Grotesque Black", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px #32577f;
+}
+
+article.card .infos .flag-1 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 35px;
+  height: 23px;
+  background: url("Flag_of_Japan_\(bordered\).svg") no-repeat top right;
+  background-size: 100% auto;
+  display: inline-block;
+}
+
+article.card .infos .flag-2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 35px;
+  height: 23px;
+  background: url("flag_of_vn.png") no-repeat top right;
+  background-size: 100% auto;
+  display: inline-block;
+}
+
+article.card .infos .date, article.card .infos  {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(21, 37, 54, 0.7);
+  font-family: "Grotesque", sans-serif;
+  text-align: left;
+}
+
+article.card .infos .txt {
+  font-family: "Merriweather", sans-serif;
+  line-height: 2;
+  font-size: 12px;
+  color: rgba(21, 37, 54, 0.7);
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+article.card:hover .infos {
+  -webkit-transform: translateY(-260px);
+          transform: translateY(-260px);
+}
+
+article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos {
+  opacity: 1;
+}
+
+
+/* a[href] {
+  position: relative;
+}
+a[href], a[href]:link, a[href]:visited, a[href]:active {
+  text-decoration: none;
+  color: #d8276c;
+  text-shadow: 2px 2px 2px #070c11;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+a[href]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+a[href]:hover::after {
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+} */
+
+
+.note {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Merriweather", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
+
+
+
+.company-card{
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.card__image{
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+border-top-left-radius: 0.25rem;
+border-top-right-radius: 0.25rem;
+-webkit-filter: contrast(90%);
+          filter: contrast(90%);
+overflow: hidden;
+position: relative;
+/* /* transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
+transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
+}
+
+
+
+.yokohama {
+  height: 250px;
+  background-image: url("./company.jpg");
+}
+
+.sapporo{
+  height: 250px;
+  background-image: url("./saporo.jpg");
+}
+
+.sendai{
+  height: 250px;
+  background-image: url("./sendai.jpg");
+}
+
+.vietnam{
+  height: 250px;
+  background-image: url("./vietnam-vn.jpg");
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cover{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2001;
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#loading-text{
+  position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-42%, -50%);
+}
+
+.mark{
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: all .1s ease-in;
+  transition: all .2 ease-in;
+}
+
+#cover .mark > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#cover .mark .base {
+  opacity: .5;
+}
+
+#cover .mark .loader {
+  opacity: 1;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 100;
+  animation: load 1s linear 0s infinite;
+  -o-animation: load 1s linear 0s infinite;
+  -ms-animation: load 1s linear 0s infinite;
+  -moz-animation: load 1s linear 0s infinite;
+  -webkit-animation: load 1s linear 0s infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#cover .mark svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#cover .mark svg circle {
+  fill: none;
+  stroke: #00aaf5;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+  -webkit-transition: all .2s ease;
+  transition: all 2 ease;
+}
+
+
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2 ease;
+}
+
+.myDiv{
+  display: none;
+  overflow: hidden;
+}
+
+.visible{
+  display: block;
+}
+
+
+@keyframes load{
+  0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+  }
+  
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+
 
 /* #button {
   display: inline-block;
@@ -83,7 +446,36 @@ section{
 
 h1{
   text-align: center;
+  color: rgb(35, 35, 170);
+  margin: 0;
+  padding: 10%;
+  font-size: 5vw;
 }
+
+h1::before{
+  background-color: rgb(49, 49, 207);
+    content: "";
+    height: 1px;
+    width: 10%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+    right: 10px;
+}
+
+h1::after{
+  background-color: rgb(49, 49, 207);;
+    content: "";
+    height: 1px;
+    width: 10%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+    left: 10px;
+}
+
 /* 
 header{
   position: absolute;
@@ -96,7 +488,11 @@ header{
 } */
 
 header{
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   left: 0;
   background: #fff;
   width: 100%;
@@ -280,7 +676,11 @@ header nav ul li a{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          padding-bottom: 10%;
+
+
 }
+
 
 
 .box-2{
@@ -294,6 +694,7 @@ header nav ul li a{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+
 }
 
 .flag-company{
@@ -378,7 +779,7 @@ background: rgba(0,0,0,0.5);
 
 .e-jan-logo{
   width: 200px; 
-  height: 60px; 
+  height: 75px; 
   padding: 20px; 
   cursor: pointer; 
 }
@@ -629,7 +1030,7 @@ span{
 strong{
   color: #d8092f; 
   text-align: center;
-  font-size: 30px;
+  font-size: 6vw;
 }
 
 
@@ -677,24 +1078,28 @@ strong{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5%;
 }
 
 .member-box-image-2{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5%;
 }
 
 .member-box-image-3{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5%;
 }
 
 .member-box-image-4{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5%;
 }
 
 /* .size-image{
@@ -972,6 +1377,22 @@ footer{
     display: flex;
     flex-direction: row;
   }
+
+  h1{
+    margin: 0;
+    padding: 5%;
+    font-size: 2vw;
+   }
+  
+   #event,strong{
+    font-size: 2vw;
+   }
+
+ 
+
+  .sport{
+    width: 85% !important;
+  }
   
   #fix{
     width: 100%;
@@ -1207,15 +1628,24 @@ footer{
 
 .box-1 {
   display: flex;
-  width: 50%;
+  width: 35%;
   height: auto;
+  
+}
 
+#box-1{
+  margin: 0 0 0 10%;
+}
+
+#box-2{
+  margin: 0 0 0 10%;
 }
 
 .box-2 {
   display: flex;
-  width: 50%;
+  width: 35%;
   height: auto;
+  /* margin: auto; */
 }
 
 #google{
@@ -1260,6 +1690,22 @@ footer{
 
 .e-jan_section{
   background-attachment: fixed;
+}
+
+.yokohama{
+  height: 220px;
+}
+
+.sapporo{
+  height: 220px;
+}
+
+.sendai{
+  height: 220px;
+}
+
+.vietnam{
+  height: 220px;
 }
 
 
@@ -1377,10 +1823,11 @@ footer{
   background: #fff;
   height: auto;
   width: 85%;
-  top: 20%;
-  left: 20%;
+  top: 15%;
+  left: 40%;
   font-size: 20px;
   text-align: center;
+  transform: translate(0, 0);
   padding: 30px;
 }
 
@@ -1443,14 +1890,27 @@ footer{
   display: flex;
   width: 50%;
   height: auto;
+  padding-bottom: 10%;
 
+}
+
+#box-1{
+  margin: 0 0 0 12%;
+  width: 32% !important;
 }
 
 .box-2 {
   display: flex;
   width: 50%;
   height: auto;
+  padding-bottom: 10%;
 }
+
+#box-2{
+  margin: 0 0 0 12%;
+  width: 32% !important; 
+}
+
 
 #google{
   flex-direction: row;
@@ -1484,8 +1944,9 @@ footer{
 @media only screen and (min-width: 1281px) {
 
    h1{
-    margin-top: 8%;
-     margin-bottom: 8%;
+    margin: 0;
+    padding: 5%;
+    font-size: 2vw;
    }
 
    
@@ -1529,9 +1990,7 @@ footer{
   }
 
   .about-ejan{
-    font-size: 30px;
-
-    
+    font-size: 25px;
   }
 
   /* .intro-ejan-1{
@@ -1691,11 +2150,12 @@ footer{
     background: #fff;
     height: auto;
     width: 85%;
-    top: 20%;
-    left: 20%;
+    top: 14%;
+    left: 30%;
     font-size: 20px;
     text-align: center;
     padding: 40px;
+    transform: translate(0, 0);
   }
 
 /* 
@@ -1786,8 +2246,92 @@ footer{
   }
 
   .flex-25per{
-    width: 25%;
+    width: 20%;
+    margin: 0 auto 0 auto;
   }
+
+
+
+
+
+
+  .company-card{
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+
+  .card__image{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  /* /* transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
+  }
+
+ .card__image:hover {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%);
+  }
+
+  .yokohama {
+    height: 250px;
+    background-image: url("./company.jpg");
+  }
+
+  .sapporo{
+    height: 250px;
+    background-image: url("./saporo.jpg");
+  }
+
+  .sendai{
+    height: 250px;
+    background-image: url("./sendai.jpg");
+  }
+
+  .vietnam{
+    height: 250px;
+    background-image: url("./vietnam-vn.jpg");
+  }
+ 
+  .cards__item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+
+
+  .card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+
+
+
+
+
+
+
 
   .urban-member{
     width: 100%;
@@ -1940,8 +2484,15 @@ footer{
     width: auto;
   }
 
+  strong{
+    color: #d8092f; 
+    text-align: center;
+    font-size: 18px;
+  }
 
-
+  #event{
+    font-size: 20px;
+  }
 
 
 
