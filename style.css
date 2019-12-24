@@ -438,6 +438,7 @@ body{
 
 #font{
   padding: 0 24px 0 24px;
+  font-size: 14px;
 }
 
 section{
@@ -1511,7 +1512,7 @@ footer{
   width: 85%;
   top: 8%;
   left: 20%;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   padding: 24px;
 }
