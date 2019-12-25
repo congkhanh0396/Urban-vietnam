@@ -9,11 +9,67 @@ html{
 #fix{
   width: 100%;
 }
+/* 
+.clip {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
+.thumb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background: no-repeat center center;
+  background-size: cover;
+  background-image: url(./bg-mask.png);
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: url(./mark_play.png) no-repeat center center;
+  background-size: 88px 88px;
+  background-color: rgba(0,0,0,0.1);
+
+}
+
+.disapear{
+  /* opacity: 0 !important; */
+  transition: all 1s ease-in-out;
+  display: none;
+} */
+
+/* .zoome-in{
+  
+  transform: scale(1.5);
+  transition: all 1s ease-in-out;
+}
+
+.zoome-out{
+  
+  transform: scale(-1.5);
+  transition: all 1s ease-in-out;
+} */
+
+.txt-detail{
+font-size: 15px; padding: 5%;
+}
 
 #event{
   margin: 0; padding: 5px;
   font-size: 5vw;
+}
+
+#p5{
+  padding: 5%;
 }
 
 .card{
@@ -186,7 +242,7 @@ overflow: hidden;
 position: relative;
 /* /* transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
 transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
+transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); 
 }
 
 
@@ -822,9 +878,11 @@ background: rgba(0,0,0,0.5);
 
 }
 
+
+
 .about-ejan{
   margin: auto;
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
   font-weight: bold;
   color: #353535;
@@ -848,6 +906,12 @@ span{
   margin: auto;
   width: 100%;
 }
+
+/* .thumb{
+  height: 450p;
+  margin: auto;
+  width: 100%;
+} */
 
 .box-1 .about-ejan p{
   padding: 5px;
@@ -966,8 +1030,8 @@ span{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   margin: auto;
 }
 
@@ -978,6 +1042,7 @@ span{
   margin: auto;
   color: #d8092f;
   font-weight: bold;
+  font-size: 18px;
 }
 
 /* .hako-detail{
@@ -988,12 +1053,18 @@ span{
 } */
 
 .hako-detail{
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
   margin-bottom: 20px;
   font-weight: bold;
+
+
+  /* thêm */
+  padding: 5%;
+  font-size: 14px;
 }
 
 /* .member-box-left{
@@ -1383,6 +1454,10 @@ footer{
     margin: 0;
     padding: 5%;
     font-size: 2vw;
+   }
+
+   #p5{
+     padding: 0;
    }
   
    #event,strong{
@@ -2278,7 +2353,7 @@ footer{
   position: relative;
   /* /* transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); */
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); 
   }
 
  .card__image:hover {

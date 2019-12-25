@@ -6,6 +6,7 @@
 // });
 
 var delayInMilliseconds = 2500; 
+var delayInMilliseconds3s = 5000; 
 
 setTimeout(function loadingCircle() {
     var loader = document.querySelector('#cover');
@@ -13,6 +14,16 @@ setTimeout(function loadingCircle() {
     var visible = document.querySelector(".myDiv");
     visible.classList.add('visible');
 }, delayInMilliseconds);
+
+// setTimeout(function ZoomeImage() {
+//     var loader = document.querySelector('.parallax-img');
+//     loader.classList.add('zoom-out');
+// }, delayInMilliseconds3s);
+
+// var imgZoom = $('parallax-img');
+// $(window).load(function () {
+//     imgZoom.removeClass('zoom-in');
+// }, 4000);
 
 // function myFunction() {
 //     myVar = setTimeout(showPage, 3000);
@@ -35,6 +46,11 @@ function scrollAppear1(){
     if(introEjan < screenPosition){
         aboutEjan.classList.add('about-ejan-appear');
     }
+}
+
+function hide() {
+    var thumb = document.getElementById('bg-mask');
+    thumb.classList.add('disapear');
 }
 
 function scrollAppear2(){

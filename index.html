@@ -42,7 +42,7 @@
 
 
         <div class="wrapper">
-            <div class="parallax-img"></div>
+            <div class="parallax-img zoom-in"></div>
             <div><img class="Urban-logo" src="urban.png" alt="Urban-logo">
             </div>
         </div>
@@ -210,9 +210,9 @@
             <div class="container" id="google">
                 <div class="box-1">
                     <div class="about-ejan intro-ejan-2">
-                        <p class="one-edge-shadow">Phụ vụ nhiệt tình</p><br>
-                        <p class="one-edge-shadow">Mọi lúc mọi nơi</p><br>
-                        <p class="one-edge-shadow">Giao hàng nhanh chóng</p>
+                        <p class="one-edge-shadow" style="font-size: 18px;">Phụ vụ nhiệt tình</p><br>
+                        <p class="one-edge-shadow" style="font-size: 18px;">Mọi lúc mọi nơi</p><br>
+                        <p class="one-edge-shadow" style="font-size: 18px;">Giao hàng nhanh chóng</p>
                     </div>
                 </div>
                 <div class="box-2">
@@ -269,22 +269,21 @@
                         <div class="member-border-box">
                             <div class="member-box-content">
                                 <strong>Hình ảnh hoạt động ở Nhật</strong><br>
-                                Đây là những hình ảnh về các hoạt động như họp IT, bàn bạc kế hoạch cho dự án mới. Như
-                                các bạn có thể thấy thì bên cạnh là hình ảnh giới thiệu nhân viên mới ở Nhật Bản.
+                                <p id="txt-detail">Đây là những hình ảnh về các hoạt động như họp IT, bàn bạc kế hoạch
+                                    cho dự án mới.
+                                    Như
+                                    các bạn có thể thấy thì bên cạnh là hình ảnh giới thiệu nhân viên mới ở Nhật Bản.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="member-box-right">
-                        <div class="member-box-image">
-                            <div class="member-box-image-1"><img class="size-image one-edge-shadow" src="thanh.jpg"
-                                    alt="">
+                        <div class="member-box-image" id="p5">
+                            <div class="member-box-image-1"><img class="size-image" src="thanh.jpg" alt="">
                             </div>
-                            <div class="member-box-image-2"><img class="size-image one-edge-shadow" src="thanh-1.jpg"
-                                    alt=""></div>
-                            <div class="member-box-image-3"><img class="size-image one-edge-shadow" src="thanh-2.jpg"
-                                    alt=""></div>
-                            <div class="member-box-image-4"><img class="size-image  one-edge-shadow" src="thanh-3.jpg"
-                                    alt="">
+                            <div class="member-box-image-2"><img class="size-image" src="thanh-1.jpg" alt=""></div>
+                            <div class="member-box-image-3"><img class="size-image" src="thanh-2.jpg" alt=""></div>
+                            <div class="member-box-image-4"><img class="size-image" src="thanh-3.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -361,10 +360,10 @@
 
         <section>
             <div class="container" id="google">
-                <div class="flex-3" style="margin-bottom: 5%;"><img class="image-shiten sport"
+                <div class="flex-3" style="margin-bottom: 5%;" id="p5"><img class="image-shiten sport"
                         style=" background-attachment: fixed; " src="30.jpg" />
                 </div>
-                <div class="flex-3" style="margin-bottom: 5%;"><img class="image-shiten"
+                <div class="flex-3" style="margin-bottom: 5%;" id="p5"><img class="image-shiten"
                         style=" background-attachment: fixed; " src="31.jpg" />
                 </div>
                 <div class="flex-4" id="column" style="justify-content: center;">
@@ -388,8 +387,8 @@
                         ty
                     </h4>
                 </div>
-                <div class="flex-75" style="margin-bottom: 5%;"><img class="image-shiten size-image" style=" background-attachment: fixed; "
-                        src="35.jpg" /></div>
+                <div class="flex-75" style="margin-bottom: 5%;" id="p5"><img class="image-shiten size-image"><img
+                        class="image-shiten size-image" style=" background-attachment: fixed; " src="35.jpg" /></div>
 
             </div>
         </section>
@@ -402,9 +401,15 @@
                     </h4>
                 </div>
                 <div class="flex-6">
+                    <!-- <div class="clip"> -->
                     <iframe id="video" class="e-jan-video" src="https://www.youtube.com/embed/pO01y3hPUSA"
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
+
+                    <!-- <div class="thumb" id="bg-mask" onclick="hide()" >
+                            <div class="mask"></div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -471,12 +476,12 @@
             <div class="container" id="google">
 
                 <div class="flex-6">
-                    <!-- <iframe id="video" class="e-jan-video" src="https://www.youtube.com/embed/pO01y3hPUSA" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe> -->
-                    <iframe id="video" class="e-jan-video" poster="/images/w3schools_green.jpg"
+
+                    <iframe id="video" class="e-jan-video"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.740225545087!2d106.71426331455453!3d10.754492992336452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f7b415f2283%3A0x451bb1b091b6d89f!2zQTk1IE5ndXnhu4VuIFRo4bqnbiBIaeG6v24sIFBoxrDhu51uZyAxOCwgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574219224881!5m2!1svi!2s"
-                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+
                 </div>
                 <div class="flex-4" id="column">
                     <h4 style="margin: auto; padding: 5px; background: #d8092f; color: #fff">A95 Nguyễn Thần Hiến,
@@ -523,7 +528,8 @@
             });
         });
     </script>
-    <script>var btn = $('#button');
+    <script>
+        var btn = $('#button');
 
         $(window).scroll(function () {
             if ($(window).scrollTop() > 300) {
@@ -532,6 +538,8 @@
                 btn.removeClass('show');
             }
         });
+
+
 
         btn.on('click', function (e) {
             e.preventDefault();
